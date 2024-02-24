@@ -1,0 +1,65 @@
+.task {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 2rem 5rem;
+  color: #000;
+  font-size: 1.5rem;
+  font-family: "Robot", sans-serif;
+}
+
+.task__block-number {
+    width: 100%;
+    display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding-right: 50px;
+}
+
+#ref {
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  background: #222;
+  color: #fff;
+  cursor: pointer;
+}
+
+.task__balance {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 800px){
+    .task {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .task {
+        font-size: .9rem;
+    }
+
+    #ref{
+        padding: .5rem 1rem;
+
+    }
+}
+
+@media screen and (max-width: 450px){
+    .task {
+        flex-direction: column;
+        font-size: .7rem;
+    }
+
+    #ref{
+        padding: .5rem 1rem;
+
+    }
+}
