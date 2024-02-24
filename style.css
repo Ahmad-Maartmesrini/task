@@ -1,6 +1,6 @@
 .task {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
   margin: 2rem 5rem;
   color: #000;
@@ -9,15 +9,16 @@
 }
 
 .task__block-number {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  padding-right: 50px;
+  padding: 0 25px;
 }
 
 #ref {
+  font-size: 16px;
   padding: 1rem 2rem;
   border-radius: 30px;
   outline: none;
@@ -33,33 +34,41 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  padding: 0 25px;
 }
 
-@media screen and (max-width: 800px){
-    .task {
-        font-size: 1.1rem;
-    }
+@media screen and (max-width: 800px) {
+  .task {
+    font-size: 1.1rem;
+  }
 }
 
-@media screen and (max-width: 600px){
-    .task {
-        font-size: .9rem;
-    }
+@media screen and (max-width: 600px) {
+  .task {
+    font-size: 0.9rem;
+  }
 
-    #ref{
-        padding: .5rem 1rem;
-
-    }
+  #ref {
+    padding: 0.5rem 1rem;
+  }
 }
 
-@media screen and (max-width: 450px){
-    .task {
-        flex-direction: column;
-        font-size: .7rem;
-    }
+@media screen and (max-width: 450px) {
+  .task {
+    max-width: 350px;
+    margin: 0;
+    flex-direction: column;
+    font-size: 0.7rem;
+  }
 
-    #ref{
-        padding: .5rem 1rem;
+  .task__balance,
+  .task__block-number {
+    max-width: 350px;
+    padding: 0;
+  }
 
-    }
+  #ref {
+    font-size: 14px;
+    padding: 0.5rem 1rem;
+  }
 }
