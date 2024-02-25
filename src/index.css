@@ -10,19 +10,12 @@
 
 @media screen and (max-width: 800px) {
   .task {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
 
 @media screen and (max-width: 600px) {
   .task {
     font-size: 0.9rem;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .task {
-    flex-direction: column;
-    font-size: 0.7rem;
   }
 }
