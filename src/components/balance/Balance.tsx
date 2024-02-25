@@ -22,7 +22,7 @@ export default function Balance() {
   return (
     <div className="balance">
       <h1>The USDT balance of the Provided address is:</h1>
-      <h2>{balance}</h2>
+      <h2>{balance}$</h2>
     </div>
   );
 }
