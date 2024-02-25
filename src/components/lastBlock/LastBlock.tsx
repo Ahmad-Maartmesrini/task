@@ -22,7 +22,7 @@ const LastBlockNumber = () => {
   return (
     <div className="block-number">
       <h1>The Last Block number of Ethereum mainnet is:</h1>
-      <h1>{number}</h1>
+      <h2>{number}</h2>
       <button onClick={fetchBlockNumber} className="refresh">
         Refresh
       </button>

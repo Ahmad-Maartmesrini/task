@@ -8,6 +8,14 @@
   font-family: "Robot", sans-serif;
 }
 
+h1 {
+  margin: 0;
+}
+
+h2 {
+  color: hsl(98, 39%, 56%);
+}
+
 @media screen and (max-width: 800px) {
   .task {
     font-size: 1.2rem;
