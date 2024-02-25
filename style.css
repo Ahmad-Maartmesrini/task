@@ -23,7 +23,7 @@
   border-radius: 30px;
   outline: none;
   border: none;
-  background: #222;
+  background: #111;
   color: #fff;
   cursor: pointer;
 }
@@ -46,6 +46,7 @@
 @media screen and (max-width: 600px) {
   .task {
     font-size: 0.9rem;
+    margin: 0;
   }
 
   #ref {
