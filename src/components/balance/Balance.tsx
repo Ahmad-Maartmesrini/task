@@ -11,7 +11,7 @@ export default function Balance() {
       .then((response: Response) => response.json())
       .then((data) => {
         const balance = data.result / 1e6; // Convert wei to USDT
-        setBalance(balance.toString());
+        setBalance(balance.toString() + "$");
       })
       .catch((error) => {
         console.error(error);
@@ -22,7 +22,7 @@ export default function Balance() {
   return (
     <div className="balance">
       <h1>The USDT balance of the Provided address is:</h1>
-      <h2>{balance}$</h2>
+      <h2>{balance}</h2>
     </div>
   );
 }
