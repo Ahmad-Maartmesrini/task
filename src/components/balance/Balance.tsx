@@ -1,11 +1,10 @@
-import { useEffect, useState } from "react";
 import "./balance.css";
+import { useEffect, useState } from "react";
 
 export default function Balance() {
   const [balance, setBalance] = useState("loading...");
 
   useEffect(() => {
-    console.log("I just ran");
     const url: string = `https://api.etherscan.io/api?module=account&action=balance&address=0xdac17f958d2ee523a2206206994597c13d831ec7&tag=latest&apikey=U1EY3SWGNYUZ26W45E9FUCJW4CF3GPEWR6`;
     fetch(url)
       .then((response: Response) => response.json())

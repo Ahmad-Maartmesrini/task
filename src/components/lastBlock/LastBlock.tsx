@@ -1,9 +1,9 @@
+import "./lastBlock.css";
 import { useState } from "react";
 import { Network, Alchemy } from "alchemy-sdk";
-import "./lastBlock.css";
 
 const LastBlockNumber = () => {
-  const network: Network = Network.ETH_MAINNET;
+  const network = Network.ETH_MAINNET;
   const apiKey: string = "nnrZdk6AtGsHrw2NFLaF4fRdUMuEiuDU"; // my API Key from Alchemy
   const alchemy = new Alchemy({ network, apiKey });
   const [number, setNumber] = useState("loading...");
