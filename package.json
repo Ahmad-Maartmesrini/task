@@ -15,13 +15,12 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
-    "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --watchAll",
+    "test": "react-scripts test --transformIgnorePatterns \"node_modules/(?!@toolz/allow-react)/\" --env=jsdom",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -44,6 +43,10 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "@babel/preset-typescript": "^7.23.3"
+    "@babel/plugin-transform-modules-commonjs": "^7.23.3",
+    "@babel/preset-typescript": "^7.23.3",
+    "babel-jest": "^29.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
   }
 }
