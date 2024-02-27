@@ -2,7 +2,7 @@ import "./lastBlock.css";
 import { useState } from "react";
 import { Network, Alchemy } from "alchemy-sdk";
 
-const LastBlockNumber = () => {
+export default function LastBlock() {
   const network = Network.ETH_MAINNET;
   const apiKey: string = "nnrZdk6AtGsHrw2NFLaF4fRdUMuEiuDU"; // my API Key from Alchemy
   const alchemy = new Alchemy({ network, apiKey });
@@ -20,7 +20,7 @@ const LastBlockNumber = () => {
   fetchBlockNumber();
 
   return (
-    <div className="block-number">
+    <div className="block-number" data-testid="last-block">
       <h1>The Last Block number of Ethereum mainnet is:</h1>
       <h2>{number}</h2>
       <button onClick={fetchBlockNumber} className="refresh">
@@ -28,6 +28,4 @@ const LastBlockNumber = () => {
       </button>
     </div>
   );
-};
-
-export default LastBlockNumber;
+}
