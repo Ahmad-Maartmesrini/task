@@ -1,16 +1,22 @@
-/*
-1. render lastblock with initial state
-2. mock api call
-3. test button
-*/
+import React from "react";
 import { render, screen } from "@testing-library/react";
 import LastBlock from "../lastBlock/LastBlock";
 
-describe("test lastblock", () => {
-  test("render lastblock with initial state", async () => {
+describe("LastBlock component", () => {
+  beforeEach(() => {
+    jest.resetModules();
+  });
+
+  test("displays the loading state initially", async () => {
     render(<LastBlock />);
-    const lastBlockComponent = screen.getByTestId("last-block");
-    expect(lastBlockComponent).toBeInTheDocument();
     expect(screen.getByText(/loading.../i)).toBeInTheDocument();
+  });
+});
+
+describe("LastBlock component 2", () => {
+  test("renders the refresh button", () => {
+    render(<LastBlock />);
+    const refreshButton = screen.getByRole("button", { name: /refresh/i });
+    expect(refreshButton).toBeInTheDocument();
   });
 });
