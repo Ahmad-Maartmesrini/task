@@ -11,9 +11,7 @@ describe("LastBlock component", () => {
     render(<LastBlock />);
     expect(screen.getByText(/loading.../i)).toBeInTheDocument();
   });
-});
 
-describe("LastBlock component 2", () => {
   test("renders the refresh button", () => {
     render(<LastBlock />);
     const refreshButton = screen.getByRole("button", { name: /refresh/i });
