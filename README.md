@@ -4,7 +4,7 @@
 
 ### Overview
 
-This GitHub project serves as a solution for a technical task assigned by [Confidential]. The task primarily involves fetching the last block number of the Ethereum mainnet and displaying the USDT balance of a provided Ethereum address. 
+This GitHub project serves as a solution for a technical task assigned by (Confidential). The task primarily involves fetching the last block number of the Ethereum mainnet and displaying the USDT balance of a provided Ethereum address.
 
 ### Features
 
@@ -23,11 +23,17 @@ npm run test
 
 ### Learning Experience
 
-Developing this solution provided valuable learning experiences, particularly in TypeScript and unit testing. The use of React-create-app helped in configuring Jest properly for testing, enhancing the overall development process.
+Developing this solution provided valuable learning experiences, particularly in TypeScript and unit testing. The use of React-create-app helped in configuring Jest properly for testing, enhancing the overall development process. Along the way, I also learned how to develop NPM packages and created a special npm package that encapsulates the basic functionality.
+
+### Check out the NPM Package
+
+For more details and to explore the NPM package developed for this project, visit the repository at:
+
+[task-package](https://github.com/Ahmad-Maartmesrini/con3x-task-package)
 
 ### Acknowledgment
 
-I'm grateful for the opportunity to be involved in blockchain and web3 technologies through this project. 
+I'm grateful for the opportunity to be involved in blockchain and web3 technologies through this project.
 
 ### License
 
